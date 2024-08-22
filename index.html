@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-manrope{
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Customizing -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'hea-colo':'#FFFFFF',
+                'tex-colo':'#ABEF5F',
+                'bor-colo':'#E9E9E9',
+              }
+            }
+          }
+        }
+      </script>
+      <script src="https://kit.fontawesome.com/a043d05274.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-manrope">
+    <header class="bg-hea-colo lg:w-4/5 mx-auto mt-8">
+        <nav>
+            <div class="navbar bg-base-100 flex justify-between mx-auto">
+                <div class="navbar-start">
+                  <a class="btn btn-ghost text-3xl font-extrabold"><i class="fa-solid fa-arrow-right bg-tex-colo w-10 h-10 -rotate-45 px-1 py-1 rounded-full"></i>Rinterio</a>
+                  </div>
+                <div class="navbar-center hidden lg:flex ">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-extrabold">Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end hidden lg:flex flex-row gap-5">
+                  <button class="search-btn w-10 h-10 rounded-full shadow-lg border-solid border border-bor-colo"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button class="cart-btn w-10 h-10 rounded-full shadow-lg border-solid border border-bor-colo"><i class="fa-solid fa-cart-shopping"></i></button>
+                  <a class="btn bg-tex-colo text-xl font-extrabold rounded-full">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-black h-7 w-7 px-1 py-1 rounded-full text-white"></i></a>
+                </div>
+                <div class="dropdown">
+                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                  </div>
+                  <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 mx-auto shadow">
+                    <li><a>Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+        </nav>
+    </header>
+</body>
+</html>
